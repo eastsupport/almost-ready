@@ -6,22 +6,42 @@
   <title>Site Temporarily Down</title>
   <style>
     body {
+      margin: 0;
+      padding: 0;
       font-family: sans-serif;
+      color: #fff;
+      background: url('wreMaintenance.png') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
       text-align: center;
-      padding: 5%;
-      background-color: #f9f9f9;
-      color: #333;
+      backdrop-filter: brightness(0.95);
     }
+
+    .content {
+      background: rgba(0, 0, 0, 0.5); /* subtle background for readability */
+      padding: 2rem;
+      border-radius: 12px;
+    }
+
     img {
-      max-width: 200px;
+      max-width: 150px;
       height: auto;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
     }
   </style>
 </head>
 <body>
-  <img src="wreRealEstate_ICON_Color - Copy.png" alt="Company Logo" />
-  <h1>We're doing some updates</h1>
-  <p>Give us a few minutes to finish up, please check back soon.</p>
+  <div class="content">
+    <h1>We're doing some updates</h1>
+    <p>Give us a few minutes to finish up. Please check back soon.</p>
+  </div>
 </body>
 </html>
